@@ -1,0 +1,12 @@
+<main>
+    <div class="container">
+        <h1 class="title">Home</h1>
+        @if(count == 0){
+            <button (click)="enviarMensagem()">Clique aqui</button>
+        }@else{
+            <button (click)="esvaziar()">Esvaziar</button>
+        }
+        <p>{{textoMensagem()}}</p>
+        <a href="/contact">Contato</a>
+    </div>
+</main>
