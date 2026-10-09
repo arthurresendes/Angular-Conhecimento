@@ -2,5 +2,15 @@
     <div class="container">
         <h1>Contatos</h1>
         <p>{{nome}}</p>
+        <button (click)="abrirModal()">Abrir Modal</button>
+
+        <dialog #meuModal>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <h2 style="padding-right: 10px;">Título do Modal</h2>
+                <button (click)="fecharModal()" style="color: red; background-color: white; cursor: pointer; border: none; font-size: 25px;">X</button>
+            </div>
+            <p>Modal de contato</p>
+            <a href="/">Voltar para home</a>
+        </dialog>
     </div>
 </main>
